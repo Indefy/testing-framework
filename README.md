@@ -1,60 +1,54 @@
-
-# Project Name
-
-## Overview
-Provide a brief description of the project. Explain what it does, why it exists, and any key features.
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+ # Testing Framework
 
 ## Installation
-Provide step-by-step instructions on how to set up the project locally.
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository**
 
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/projectname.git
+```
 
-# Navigate to the project directory
+2. **Navigate to the project directory**
 cd projectname
 
-# Install dependencies
+Install dependencies
+```bash
 npm install
 ```
 
-## Usage
-Provide instructions on how to use the project. If applicable, include examples of common tasks.
+3. **Usage**
+To use the project, follow these steps:
 
+Start the application
 ```bash
-# Start the application
 npm start
 ```
 
-## Testing
-Detail the testing setup and how to run the tests.
-
+4. **Testing**
+Running Tests
+To run all tests, use the following command:
 ```bash
-# Run all tests
 npm test
+```
 
-# Run a specific test
+5. **To run a specific test, use the following command:**
+```bash
 npx mocha tests/unit/test_example.mjs
 ```
 
-### Testing Framework
-- **Mocha**: A feature-rich JavaScript test framework running on Node.js.
-- **Chai**: A BDD / TDD assertion library.
-- **Sinon**: A library used to create spies, stubs, and mocks for JavaScript.
-  
-### Writing Tests
-- **Location**: All test files are located in the `tests` directory. Unit tests are in the `tests/unit` subdirectory.
-- **Example**: Below is an example of a unit test for the `fetchDataWrapper` function:
+ ## **Testing Framework**
+We use the following tools for testing:
 
-```javascript
+Mocha: A feature-rich JavaScript test framework running on Node.js.
+Chai: A BDD / TDD assertion library.
+Sinon: A library used to create spies, stubs, and mocks for JavaScript.
+Writing Tests
+All test files are located in the tests directory. Unit tests are in the tests/unit subdirectory.
+
+Here's an example of a unit test for the fetchDataWrapper function:
+```bash
 import { expect } from 'chai';
 import sinon from 'sinon';
 import utilsWrapper from '../../framework/utilsWrapper.js';
@@ -80,34 +74,31 @@ describe('Advanced Test Suite', () => {
 ```
 
 ## Project Structure
-Explain the project structure and the purpose of key directories and files.
+Here's an overview of the project structure:
 
-```
-/projectname
-├── /framework
-│   ├── config.mjs          # Configuration module
-│   ├── logger.mjs          # Logger setup using Winston
-│   └── utilsWrapper.js     # Wrapper for utility functions
-├── /tests
-│   ├── /unit               # Unit tests
-│   │   └── test_example.mjs # Example test file
-├── package.json            # Project dependencies and scripts
-├── README.md               # Project documentation
-└── .gitignore              # Git ignore file
-```
+ - /projectname <br>
+   - /framework <br>
+   - config.mjs <----- # Configuration module <br>
+     - logger.mjs <----- # Logger setup using Winston <br>
+     - utilsWrapper.js <----- # Wrapper for utility functions <br>
+   - /tests <br>
+     - /unit <----- # Unit tests <br>
+       - test_example.mjs <----- # Example test file <br>
+   - package.json <----- # Project dependencies and scripts <br>
+   - README.md <----- # Project documentation <br>
+   - .gitignore <----- # Git ignore file <br>
 
 ## Contributing
-Provide guidelines for contributing to the project. Include instructions for making a pull request and the process for reviewing contributions.
+We welcome contributions! Here's how you can contribute:
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Submit a pull request.
+## Fork the repository.
+ - Create a new branch: git checkout -b feature/your-feature-name.
+ - Make your changes and commit them: git commit -m 'Add some feature'.
+ - Push to the branch: git push origin feature/your-feature-name.
+ - Submit a pull request.
+  - License
 
-## License
-Include the license under which the project is distributed (e.g., MIT, Apache 2.0).
+    
+#### This project is licensed under the MIT License.
 
-```
-MIT License
-```
+**This version includes more detailed instructions and clearer formatting. It also includes**
