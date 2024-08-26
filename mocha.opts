@@ -1,0 +1,4 @@
+--recursive
+--timeout 5000
+--reporter mocha-html-reporter
+--reporter-options output=./reports/test-report.html
